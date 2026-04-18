@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sn-pro {
+  font-family: "SN Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200 900;
+  font-style: normal;
+}
+
+
+:root {
+  --primary-color: rgba(172, 225, 175, 1);
+  --secondary-color: rgba(0, 86, 59, 1);
+  --tertiary-color: rgba(254, 250, 224, 1);
+  --black: #23242a;
+  --white: rgba(255, 255, 255, 1);
+  --active-border-color: #00563B;
+  --inactive-border-color: #e2e8f0;
+  --bg-body: #f1f5f9;
+}
+
+h1{
+  font-family: "SN Pro", Helvetica;
+  font-weight: 700;
+  color: var(--black);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  color: var(--black);
+  padding: 0 16px;
+}
