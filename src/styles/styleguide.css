@@ -2,6 +2,12 @@ html,
 body {
   margin: 0px;
   height: 100%;
+  overflow-x: hidden;
+
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 a {
@@ -26,14 +32,29 @@ a {
   --inactive-border-color: #e2e8f0;
   --bg-body: #f1f5f9;
 }
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
 
-h1{
-  font-family: "SN Pro", Helvetica;
-  font-weight: 700;
-  color: var(--black);
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-  color: var(--black);
-  padding: 0 16px;
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: local("Inter-SemiBold");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: local("Inter-Medium");
 }

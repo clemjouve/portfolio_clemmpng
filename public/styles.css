@@ -1,0 +1,347 @@
+@import url(../src/styles/styleguide.css);
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 32px;
+  position: fixed ;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  z-index: 4;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 8px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #000000;
+  border-radius: 16px;
+  backdrop-filter: blur(35px) brightness(100%);
+  -webkit-backdrop-filter: blur(35px) brightness(100%);
+}
+
+.company {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.favicon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.text-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: -0.36px;
+  line-height: 25.2px;
+  white-space: nowrap;
+}
+
+.buttons {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.div {
+  display: flex;
+  width: fit-content;
+  margin-top: -1px;
+  color: #000000;
+  white-space: nowrap;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.08px;
+  line-height: 23.2px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+.div-2 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  z-index: 1;
+}
+
+.text-wrapper-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: -0.88px;
+  line-height: 48.4px;
+}
+
+.text-wrapper-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffffd9;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: -0.09px;
+  line-height: 26.1px;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  align-self: stretch;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 1;
+}
+
+.primary-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #000000;
+  border-radius: 12px;
+}
+
+.text-wrapper-4 {
+  position: relative;
+  display: -webkit-box;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.08px;
+  line-height: 23.2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+
+  -webkit-box-orient: vertical;
+}
+
+.secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff03;
+  border-radius: 12px;
+  border: 2px solid;
+  border-color: #ffffff26;
+  backdrop-filter: blur(4px) brightness(100%);
+  -webkit-backdrop-filter: blur(4px) brightness(100%);
+}
+
+.text-wrapper-5 {
+  display: -webkit-box;
+  flex: 1;
+  margin-top: -2px;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.08px;
+  line-height: 23.2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.feature-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 0px 24px 32px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.card {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.image {
+  object-fit: cover;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  aspect-ratio: 1.33;
+}
+
+.text {
+  align-items: baseline;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.text-wrapper-6 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: -0.36px;
+  line-height: 21.6px;
+  white-space: nowrap;
+}
+
+.text-wrapper-7 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #0000008c;
+  font-size: 16px;
+  letter-spacing: -0.08px;
+  line-height: 23.2px;
+  white-space: nowrap;
+}
+
+.feature-cards-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 0px 24px 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.image-2 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.33;
+}
