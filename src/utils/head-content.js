@@ -1,5 +1,5 @@
 (function () {
-  const faviconPath = '/src/assets/favicon.svg'; // chemin côté serveur (absolu)
+  const faviconPath = '../src/assets/icons/clemjouve.svg'; // chemin côté serveur (absolu)
 
   function ensureHeadContent() {
     if (!document.head) return;
@@ -8,7 +8,7 @@
     const fonts = [
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap' }
     ];
 
     fonts.forEach(spec => {
