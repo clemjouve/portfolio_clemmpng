@@ -1,5 +1,9 @@
 @import url(../src/styles/styleguide.css);
 
+body {
+  margin-top: 102px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -38,6 +42,15 @@
   position: relative;
   width: 32px;
   height: 32px;
+  border-radius: 6px;
+  transition: background-color 0.5s ease;
+}
+
+.favicon :hover
+{
+  transition-property:background-color;
+  background-color: #1A1A1A;
+  transition: background-color 0.5s ease;
 }
 
 .img {
@@ -47,6 +60,7 @@
   object-fit: cover;
   z-index: 0;
 }
+
 
 .text-wrapper {
   position: relative;
@@ -81,6 +95,7 @@
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
+  transition: background-color 0.5s ease;
 }
 
 .div {
@@ -106,14 +121,16 @@
   align-items: center;
   justify-content: center;
   gap: 32px;
-  padding: 80px 24px;
+  padding: 120px 24px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  min-height: 60vh;
   flex: 0 0 auto;
   background-size: cover;
   background-position: 50% 50%;
   overflow: hidden;
+  z-index: 1;
 }
 
 .div-2 {
@@ -184,6 +201,7 @@
   flex: 0 0 auto;
   background-color: #000000;
   border-radius: 12px;
+  transition: background-color 0.5s ease;
 }
 
 .text-wrapper-4 {
@@ -207,7 +225,7 @@
   -webkit-box-orient: vertical;
 }
 
-.secondary-button {
+.secondary-cta {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,7 +266,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 60px 0px;
+  padding: 24px 0px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -265,6 +283,7 @@
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  z-index: 1;
 }
 
 .card {
