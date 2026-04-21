@@ -26,8 +26,8 @@ body {
   flex-grow: 1;
   background-color: #000000;
   border-radius: 16px;
-  backdrop-filter: blur(35px) brightness(100%);
-  -webkit-backdrop-filter: blur(35px) brightness(100%);
+  backdrop-filter: blur(34px) brightness(100%);
+  -webkit-backdrop-filter: blur(34px) brightness(100%);
 }
 
 .company {
@@ -107,7 +107,7 @@ body {
   position: relative;
   align-items: center;
   justify-content: center;
-  font-family: "Inter-Medium", Helvetica;
+  font-family: "Inter", Helvetica;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -152,7 +152,7 @@ body {
   justify-content: center;
   align-self: stretch;
   margin-top: -1px;
-  font-family: "Inter-Bold", Helvetica;
+  font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 44px;
@@ -167,7 +167,7 @@ body {
   align-items: center;
   justify-content: center;
   align-self: stretch;
-  font-family: "Inter-Medium", Helvetica;
+  font-family: "Inter", Helvetica;
   font-weight: 500;
   color: #ffffffd9;
   font-size: 18px;
@@ -211,7 +211,7 @@ body {
   justify-content: center;
   flex: 1;
   margin-top: -1px;
-  font-family: "Inter-Medium", Helvetica;
+  font-family: "Inter", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 16px;
@@ -239,8 +239,8 @@ body {
   border-radius: 12px;
   border: 2px solid;
   border-color: #ffffff26;
-  backdrop-filter: blur(4px) brightness(100%);
-  -webkit-backdrop-filter: blur(4px) brightness(100%);
+  backdrop-filter: blur(6px) brightness(100%);
+  -webkit-backdrop-filter: blur(6px) brightness(100%);
 }
 
 .text-wrapper-5 {
@@ -254,7 +254,7 @@ body {
   position: relative;
   align-items: center;
   justify-content: center;
-  font-family: "Inter-Medium", Helvetica;
+  font-family: "Inter", Helvetica;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -322,7 +322,7 @@ body {
   align-items: center;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Inter-SemiBold", Helvetica;
+  font-family: "Inter", Helvetica;
   font-weight: 600;
   color: #000000;
   font-size: 18px;
