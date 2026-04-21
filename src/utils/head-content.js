@@ -1,10 +1,12 @@
 (function () {
-  const faviconPath = '../src/assets/icons/favicon.png'; // chemin côté serveur (absolu)
+  // CONSEIL : Utilisez un chemin absolu par rapport à la racine de votre serveur
+  // Si votre favicon est dans public/assets/icons/favicon.png, utilisez '/assets/icons/favicon.png'
+  const faviconPath = '/assets/icons/favicon.png'; 
 
   function ensureHeadContent() {
     if (!document.head) return;
 
-    // fonts preconnect links
+    // --- Gestion des Polices ---
     const fonts = [
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
@@ -12,40 +14,42 @@
     ];
 
     fonts.forEach(spec => {
-      // avoid duplicate
-      const selector = `link[rel='${spec.rel}'][href='${spec.href}']` + (spec.crossorigin ? `[crossorigin]` : '');
+      const selector = `link[rel='${spec.rel}'][href='${spec.href}']`;
       if (!document.head.querySelector(selector)) {
         const link = document.createElement('link');
-        Object.keys(spec).forEach(k => link.setAttribute(k, spec[k]));
+        Object.entries(spec).forEach(([key, value]) => link.setAttribute(key, value));
         document.head.appendChild(link);
       }
     });
 
-    // favicon handling
-    // Primary icon
-    let icon = document.querySelector("link[rel~='icon']");
-    if (!icon) {
-      icon = document.createElement('link');
-      icon.rel = 'icon';
-      document.head.insertBefore(icon, document.head.firstChild || null);
-    }
-    icon.type = 'image/png';
-    icon.href = faviconPath;
-
-    // Add/update legacy shortcut icon for some browsers
-    let shortcut = document.querySelector("link[rel='shortcut icon']");
-    if (!shortcut) {
-      shortcut = document.createElement('link');
-      shortcut.rel = 'shortcut icon';
-      document.head.insertBefore(shortcut, document.head.firstChild || null);
-    }
-    shortcut.type = 'image/png';
-    shortcut.href = faviconPath;
+    // --- Gestion de la Favicon ---
+    // On regroupe les types de rel pour mettre à jour tous les éléments d'icône existants
+    const rels = ['icon', 'shortcut icon'];
+    
+    rels.forEach(relType => {
+      let link = document.querySelector(`link[rel*='${relType}']`);
+      
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = relType;
+        document.head.appendChild(link);
+      }
+      
+      link.type = 'image/png';
+      // Ajout d'un paramètre de version pour forcer le rafraîchissement du cache (optionnel)
+      link.href = faviconPath + '?v=' + Date.now(); 
+    });
   }
 
+  // Exécution immédiate si possible, sinon au chargement du DOM
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ensureHeadContent);
   } else {
     ensureHeadContent();
   }
 })();
+
+const script = document.createElement('script');
+script.src = 'src/utils/body-content.js';
+script.type = 'text/javascript';
+document.head.appendChild(script);
