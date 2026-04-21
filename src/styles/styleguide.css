@@ -3,7 +3,7 @@ body {
   margin: 0px;
   height: 100%;
   overflow-x: hidden;
-
+  -webkit-tap-highlight-color: transparent;
 }
 
 *, *:before, *:after {
@@ -56,4 +56,24 @@ a {
 @font-face {
   font-family: "Inter-Medium";
   src: local("Inter-Medium");
+}
+
+h1{
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  line-height: 57.6px;
+  margin: 0px !important;
+}
+
+h2 {
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #737373;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 26.4px;
+  margin: 0px;
 }
