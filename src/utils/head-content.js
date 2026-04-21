@@ -1,5 +1,5 @@
 (function () {
-  const faviconPath = '../src/assets/icons/clemjouve.svg'; // chemin côté serveur (absolu)
+  const faviconPath = '../src/assets/icons/favicon.png'; // chemin côté serveur (absolu)
 
   function ensureHeadContent() {
     if (!document.head) return;
