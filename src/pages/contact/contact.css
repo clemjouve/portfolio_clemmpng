@@ -1,28 +1,23 @@
 @import url(../src/styles/styleguide.css);
 @import url(../public/styles.css);
 
-h1{
-  position: relative;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 44px;
-  text-align: center;
-  letter-spacing: -0.88px;
-  line-height: 48.4px;
+.content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 92px 24px 0 24px;
+  position: relative;
+  background-color: #ffffff;
 }
-.h {
+
+.content .h {
   position: relative;
   display: flex;
   align-items: center;
   width: 287px;
-  margin-top: -89.83px;
-  font-family: "Inter-Bold", Helvetica;
+  margin-top: -1px;
+  font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #000000;
   font-size: 44px;
@@ -30,17 +25,16 @@ h1{
   line-height: 48.4px;
 }
 
-.socials-wrapper {
+.content .socials-wrapper {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   position: relative;
   flex: 0 0 auto;
-  margin-top: -15.83px;
 }
 
-.div {
+.content .div {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -48,27 +42,19 @@ h1{
   flex: 0 0 auto;
 }
 
-.div-2 {
+.content .img {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
-.vector {
-  position: absolute;
-  width: 87.50%;
-  height: 87.50%;
-  top: 12.50%;
-  left: 12.50%;
-}
-
-.text-wrapper {
+.content .text-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   width: 287px;
   margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
+  font-family: "Inter", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 24px;
@@ -76,21 +62,7 @@ h1{
   line-height: 26.4px;
 }
 
-.icon {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.vector-2 {
-  position: absolute;
-  width: 91.67%;
-  height: 83.33%;
-  top: 16.67%;
-  left: 8.33%;
-}
-
-.clemm-png-gmail-com {
+.content .clemm-png-gmail-com {
   position: relative;
   display: flex;
   align-items: center;
@@ -107,55 +79,44 @@ h1{
   padding: 0;
 }
 
-.image {
+.content .image {
   position: relative;
   align-self: stretch;
   width: 100%;
   aspect-ratio: 1.48;
   object-fit: cover;
+  border-radius: 6px;
 }
 
-.information {
-  display: flex;
+.content .info {
   align-items: flex-start;
   gap: 12px;
-  position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-  margin-bottom: -88.83px;
-}
-
-.vector-3 {
-  position: absolute;
-  width: 91.67%;
-  height: 91.67%;
-  top: 8.33%;
-  left: 8.33%;
-}
-
-.p {
-  position: relative;
   display: flex;
+  position: relative;
+}
+
+.content .info-text {
   align-items: center;
   flex: 1;
   margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
+  font-family: "Inter", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
   letter-spacing: -0.5px;
   line-height: 22px;
+  display: flex;
+  position: relative;
 }
 
-.content {
-  display: flex;
+.contact-info {
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  gap: 32px;
+  align-items: flex-start;
+  gap: 12px;
   position: relative;
-  align-self: stretch;
-  width: 100%;
   flex: 0 0 auto;
-  padding: 24px 0 0 0 ;
 }
