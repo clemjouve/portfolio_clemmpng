@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../src/styles/styleguide.css" />
     <script href="../src/utils/head-content.js"></script>
+    <script href="script"></script>
   </head>
   <body>
       <div class="header">
         <div class="menu">
-          <div class="company">
-            <a class="favicon" href="../public/index.html">
+          <a class="company" href="../public/index.html">
+            <div class="favicon">
               <img class="favicon" src="../src/assets/icons/favicon.svg" />
-            </a>
+            </div>
             <div class="text-wrapper">clemm.png</div>
-          </div>
+          </a>
           <div class="buttons">
             <a class="primary-button" href="../src/pages/contact/contact.html">
               <div class="div">Contact</div>
@@ -32,15 +33,15 @@
         </div>
         <div class="cta-container">
           <div class="primary-cta">
-            <div class="text-wrapper-4">Découvrir</div>
+            <a href="#content" class="text-wrapper-4">Découvrir</a>
           </div>
-          <div class="secondary-cta">
+          <a href="../src/pages/contact/contact.html" class="secondary-cta">
             <div class="text-wrapper-5">Contact</div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="container">
-        <div class="feature-cards">
+        <div id="content" class="feature-cards">
           <a href="../src/pages/dockers_de_nantes/dockers.html" class="card">
             <img class="image" src="../src/assets/images/dockers_de_nantes.JPG" />
             <div class="text">
@@ -55,8 +56,7 @@
               <div class="text-wrapper-7">Course carritative</div>
             </div>
           </div>
-        </div>
-        <div class="feature-cards-2">
+       
           <div class="card">
             <img class="image-2" src="../src/assets/images/ASPTT_handball.jpg" />
             <div class="text">
@@ -70,7 +70,7 @@
               <div class="text-wrapper-6">NEC</div>
               <div class="text-wrapper-7">Escrime</div>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
   </body>

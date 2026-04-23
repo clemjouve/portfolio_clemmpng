@@ -1,5 +1,15 @@
 @import url(../src/styles/styleguide.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -16,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 640px;
   padding: 8px 8px 8px 16px;
   position: relative;
   flex: 1;
@@ -40,14 +51,16 @@
   height: 32px;
   border-radius: 6px;
   transition: background-color 0.5s ease;
-}
+   pointer-events:visible}
 
 .favicon :hover
 {
   transition-property:background-color;
   background-color: #1A1A1A;
   transition: background-color 0.5s ease;
+  
 }
+
 
 .img {
   position: absolute;
