@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a57ccbd-e7a4-484a-9f84-eed271f79be2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/assets/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/favicon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/components/radio-vertical/radio-vertical.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/components/radio-vertical/radio-vertical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/favicon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/form-template/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/layout-form/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/layout-form/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/layout-form/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/layout-form/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gaspia.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/run_for_lorene/run_for_lorene.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/run_for_lorene/run_for_lorene.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/body-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/body-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/head-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/head-content.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +24,12 @@
     &quot;assignee&quot;: &quot;clemjouve&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/clemjouve/gaspIA&quot;,
-    &quot;accountId&quot;: &quot;dbeaf67f-dcc9-4800-8cae-795564d41e3d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/clemjouve/portfolio_clemmpng.git",
+    "accountId": "dbeaf67f-dcc9-4800-8cae-795564d41e3d"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -43,26 +39,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/CLEMENT.JOUVE/OneDrive - Conseil Régional des Pays de La Loire - Direction des Lycées/Documents/Code/Projets/gaspia&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/CLEMENT.JOUVE/OneDrive - Conseil Régional des Pays de La Loire - Direction des Lycées/Documents/Code/Projets/portfolio",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -81,6 +77,7 @@
       <workItem from="1765667882255" duration="602000" />
       <workItem from="1766758681487" duration="110000" />
       <workItem from="1773757427021" duration="76000" />
+      <workItem from="1776976751414" duration="46000" />
     </task>
     <servers />
   </component>

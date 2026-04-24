@@ -1,7 +1,5 @@
 (function () {
-  // CONSEIL : Utilisez un chemin absolu par rapport à la racine de votre serveur
-  // Si votre favicon est dans public/assets/icons/favicon.png, utilisez '/assets/icons/favicon.png'
-  const faviconPath = '/assets/icons/favicon.png'; 
+  const faviconPath = '../bsrc/assets/icons/favicon.svg';
 
   function ensureHeadContent() {
     if (!document.head) return;
@@ -22,12 +20,10 @@
       }
     });
 
-    // --- Gestion de la Favicon ---
-    // On regroupe les types de rel pour mettre à jour tous les éléments d'icône existants
-    const rels = ['icon', 'shortcut icon'];
+    const rels = ['icon', 'apple-touch-icon'];
     
     rels.forEach(relType => {
-      let link = document.querySelector(`link[rel*='${relType}']`);
+      let link = document.querySelector(`link[rel="${relType}"]`);
       
       if (!link) {
         link = document.createElement('link');
@@ -35,13 +31,11 @@
         document.head.appendChild(link);
       }
       
-      link.type = 'image/png';
-      // Ajout d'un paramètre de version pour forcer le rafraîchissement du cache (optionnel)
-      link.href = faviconPath + '?v=' + Date.now(); 
+      link.type = 'image/svg+xml';
+      link.href = faviconPath;
     });
   }
 
-  // Exécution immédiate si possible, sinon au chargement du DOM
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ensureHeadContent);
   } else {
