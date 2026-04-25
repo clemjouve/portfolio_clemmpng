@@ -4,13 +4,14 @@ body {
   height: 100%;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
+  text-decoration: none!important ;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
 a {
-  text-decoration: none;
+  text-decoration: none!important ;
 }
 
 .sn-pro {
