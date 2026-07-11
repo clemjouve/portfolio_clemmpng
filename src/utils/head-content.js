@@ -1,5 +1,5 @@
 (function () {
-  const faviconPath = '../bsrc/assets/icons/favicon.svg';
+  const faviconPath = '../src/assets/icons/favicon.svg';
 
   function ensureHeadContent() {
     if (!document.head) return;
